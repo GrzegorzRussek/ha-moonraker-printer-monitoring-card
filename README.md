@@ -1,7 +1,7 @@
 # Printer Monitoring Card
 
 Simple card for monitoring klipper based printers in Home Assistant
-![readme-image](https://github.com/GrzegorzRussek/ha-moonraker-printer-monitoring-card/img/sample.png)
+![readme-image](https://github.com/GrzegorzRussek/ha-moonraker-printer-monitoring-card/blob/main/img/sample.png?raw=true)
 
 # Assumptions
 
