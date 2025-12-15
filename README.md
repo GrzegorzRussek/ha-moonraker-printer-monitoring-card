@@ -13,6 +13,8 @@ This card assimes that you have installedfollowing hacks components:
 - [Mushroom](https://github.com/piitaya/lovelace-mushroom/)
 - [Stack In Card](https://github.com/custom-cards/stack-in-card/)
 - [Entity Progress Card](https://github.com/francois-le-ko4la/lovelace-entity-progress-card)
+- [card-mod](https://github.com/thomasloven/lovelace-card-mod/tree/v4.1.0)
+- mod-card
 
 ## Setup requirements
 - Your printer must be connected to smart outlet/plug/relay that realay shoult be provided as `printer_switch`.
