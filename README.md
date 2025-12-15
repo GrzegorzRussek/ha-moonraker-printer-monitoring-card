@@ -1,6 +1,8 @@
 # Printer Monitoring Card
 
-Simple card for monitoring klipper based printers in Home Assistant
+Simple card for monitoring klipper based printers in Home Assistant.
+It provides ability to view image from camera, some basic stats and print progress. You can pause/resume/stop prints.
+If printer is not printing, power down button is visible. You also can access switch by long pressing on printer name in case of emergency.
 
 ![readme-image](https://github.com/GrzegorzRussek/ha-moonraker-printer-monitoring-card/blob/main/img/sample.png?raw=true)
 
@@ -86,3 +88,14 @@ live_camera_rotation: 0
 printer_switch: switch.printers_socket_3
 toggle_script: script.sovol_sv08_toggle
 ```
+
+# Known Issues
+
+## Buttons alignment
+Resume/Puse/Stop/Power buttons are aligned to the right side using dodgy concept of adding horizontal stacks... This results in some squashing when there are two buttons visible.
+
+## Timing
+When toggling printer script printer needs some time to buut up and be availiable in HA, so til then same button is displayed, but with active color (which is normal for bubble card). Same applies when shutting down printer. Preview is visible untill state entity is availiable.
+
+## Editor
+Well some sort of editor is added, but... it's better to use yaml anyway
