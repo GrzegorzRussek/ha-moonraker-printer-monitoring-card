@@ -458,7 +458,41 @@ class PrinterMonitorCard extends HTMLElement {
                                                 { type: 'entity', entity: `sensor.${p}_print_eta`, tap_action: { action: 'none' }, hold_action: { action: 'none' }, double_tap_action: { action: 'none' } },
                                                 { type: 'entity', entity: `sensor.${p}_progress`, icon: 'mdi:chart-donut', tap_action: { action: 'none' }, hold_action: { action: 'none' }, double_tap_action: { action: 'none' } },
                                                 { type: 'entity', entity: `sensor.${p}_toolhead_position_z`, icon: 'mdi:gantry-crane', tap_action: { action: 'none' }, hold_action: { action: 'none' }, double_tap_action: { action: 'none' } },
-                                                { type: 'entity', entity: `sensor.${p}_fan1`, tap_action: { action: 'none' }, hold_action: { action: 'none' }, double_tap_action: { action: 'none' } }
+                                                { 
+                                                    type: 'entity', entity: `sensor.${p}_fan1`, 
+                                                    tap_action: { action: 'none' }, hold_action: { action: 'none' }, double_tap_action: { action: 'none' },
+                                                    visibility: [
+                                                        { condition: 'state', entity: `sensor.${p}_fan1`, state_not: 'unavailable' }
+                                                    ]
+                                                },
+                                                { 
+                                                    type: 'entity', entity: `sensor.${p}_fan2`, 
+                                                    tap_action: { action: 'none' }, hold_action: { action: 'none' }, double_tap_action: { action: 'none' },
+                                                    visibility: [
+                                                        { condition: 'state', entity: `sensor.${p}_fan2`, state_not: 'unavailable' }
+                                                    ]
+                                                },
+                                                { 
+                                                    type: 'entity', entity: `sensor.${p}_fan3`, 
+                                                    tap_action: { action: 'none' }, hold_action: { action: 'none' }, double_tap_action: { action: 'none' },
+                                                    visibility: [
+                                                        { condition: 'state', entity: `sensor.${p}_fan3`, state_not: 'unavailable' }
+                                                    ]
+                                                },
+                                                { 
+                                                    type: 'entity', entity: `sensor.${p}_fan3`, 
+                                                    tap_action: { action: 'none' }, hold_action: { action: 'none' }, double_tap_action: { action: 'none' },
+                                                    visibility: [
+                                                        { condition: 'state', entity: `sensor.${p}_fan3`, state_not: 'unavailable' }
+                                                    ]
+                                                },
+                                                { 
+                                                    type: 'entity', entity: `sensor.${p}_fan_speed`, 
+                                                    tap_action: { action: 'none' }, hold_action: { action: 'none' }, double_tap_action: { action: 'none' },
+                                                    visibility: [
+                                                        { condition: 'state', entity: `sensor.${p}_speed`, state_not: 'unavailable' }
+                                                    ]
+                                                }
                                             ],
                                             alignment: 'center'
                                         }
